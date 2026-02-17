@@ -1,0 +1,112 @@
+<!-- Footer -->
+<footer class="bg-navy text-white">
+    <!-- Decorative Gradient Border -->
+    <div class="h-1 bg-gradient-to-r from-crimson via-gold to-navy"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+            <!-- Column 1: Logo & Description -->
+            <div>
+                <div class="mb-4">
+                    <span class="text-2xl font-display font-bold">
+                        ASTRA<span class="text-crimson">Ed</span>
+                    </span>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Construyendo un legado de innovación y progreso. Consultoría estratégica y capacitación
+                    especializada desde 2016.
+                </p>
+            </div>
+
+            <!-- Column 2: Navigation -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gold">Navegación</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="index.html" class="text-gray-300 hover:text-crimson transition-colors text-sm">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicios.html" class="text-gray-300 hover:text-crimson transition-colors text-sm">
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="text-gray-300 hover:text-crimson transition-colors text-sm">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Hours -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gold">Horarios</h3>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-clock text-crimson mt-1 mr-2"></i>
+                        <span>Lunes - Viernes<br>8:00 AM - 6:00 PM</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-clock text-crimson mt-1 mr-2"></i>
+                        <span>Sábado<br>9:00 AM - 1:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gold">Contacto</h3>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-crimson mt-1 mr-2"></i>
+                        <span>Asunción, Paraguay</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone text-crimson mt-1 mr-2"></i>
+                        <span>+595 XXX XXX XXX</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-envelope text-crimson mt-1 mr-2"></i>
+                        <a href="mailto:contacto@astraed.com" class="hover:text-crimson transition-colors">
+                            contacto@astraed.com
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Social Media -->
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-300 hover:text-crimson transition-colors text-xl"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-crimson transition-colors text-xl"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-crimson transition-colors text-xl"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-crimson transition-colors text-xl" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; <span id="current-year"></span> ASTRAEd - Astra Education Consulting. Todos los derechos
+                reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>

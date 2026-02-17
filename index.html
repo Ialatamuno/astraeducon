@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRAEd | Consultoría y Capacitación Estratégica</title>
+    <meta name="description"
+        content="Construyendo un legado de innovación y progreso. Soluciones profesionales en consultoría estratégica y capacitación especializada desde 2016.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'crimson': '#A51C30',
+                        'crimson-dark': '#8B1728',
+                        'navy': '#0C2340',
+                        'navy-light': '#1A3A5C',
+                        'gold': '#C99700',
+                        'gold-light': '#E6B800'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        #mobile-menu.hidden {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        #mobile-menu:not(.hidden) {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white" data-page="index">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-transparent z-10"></div>
+                <img src="images/hero.jpg" alt="ASTRAEd Consultoría Profesional" class="w-full h-full object-cover">
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
+                <div class="max-w-4xl">
+                    <p class="text-gold text-sm md:text-base font-semibold tracking-[0.3em] uppercase mb-4">
+                        Consultoría y Capacitación Estratégica
+                    </p>
+
+                    <h1 class="font-display font-bold text-white text-5xl md:text-7xl leading-tight mb-6">
+                        Construyendo un legado de <span class="text-crimson">innovación</span> y progreso
+                    </h1>
+
+                    <p class="text-gray-200 text-lg md:text-xl mb-8 max-w-2xl">
+                        Desarrollo Empresarial • Formación Especializada • Consultoría Estratégica
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="servicios.html"
+                            class="px-8 py-4 border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-navy transition-all duration-300 text-center">
+                            Ver Servicios
+                        </a>
+                        <a href="contacto.html"
+                            class="px-8 py-4 bg-gradient-to-r from-crimson to-navy text-white font-semibold rounded-md hover:scale-105 transition-transform duration-300 shadow-lg text-center">
+                            Contáctanos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+                <i class="fas fa-chevron-down text-white text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-crimson text-sm font-semibold tracking-wide uppercase mb-3">
+                            Bienvenido a ASTRAEd
+                        </p>
+
+                        <h2 class="font-display font-bold text-4xl md:text-5xl text-navy mb-6">
+                            Fortaleciendo el talento humano
+                        </h2>
+
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            En ASTRAEd nos especializamos en brindar capacitación y consultoría estratégica con un
+                            enfoque moderno y transformador. Desde 2016 trabajamos junto a instituciones públicas y
+                            privadas, ofreciendo soluciones en educación, desarrollo empresarial y formación
+                            especializada.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Nuestra esencia está en fortalecer el talento humano y acompañar a las organizaciones en su
+                            crecimiento, aplicando metodologías actualizadas y el uso de tecnologías innovadoras.
+                            Convertimos el conocimiento en acción, asegurando resultados tangibles y sostenibles.
+                        </p>
+
+                        <div class="flex flex-wrap gap-8 items-center border-l-4 border-crimson pl-6">
+                            <div>
+                                <p class="font-display font-bold text-3xl text-navy">2016</p>
+                                <p class="text-sm text-gray-600">Desde el año</p>
+                            </div>
+                            <div class="h-12 w-px bg-gold"></div>
+                            <div>
+                                <p class="font-display font-bold text-3xl text-navy">Soluciones</p>
+                                <p class="text-sm text-gray-600">Innovadoras</p>
+                            </div>
+                            <div class="h-12 w-px bg-gold"></div>
+                            <div>
+                                <p class="font-display font-bold text-3xl text-navy">Excelencia</p>
+                                <p class="text-sm text-gray-600">En Formación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="images/ambiente.jpg" alt="Ambiente Profesional ASTRAEd"
+                            class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-20 bg-navy text-white">
+            <div class="flex justify-center mb-8">
+                <div class="h-1 w-24 bg-gradient-to-r from-crimson via-gold to-crimson rounded-full"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">
+                        Nuestros Servicios
+                    </h2>
+                    <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+                        Soluciones integrales para el desarrollo profesional y organizacional
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio1.jpg" alt="Consultoría Estratégica"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Consultoría</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Consultoría Estratégica</h3>
+                            <p class="text-gray-300 text-sm">
+                                Acompañamiento profesional en planificación, diagnóstico y optimización de procesos
+                                organizacionales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio2.jpg" alt="Capacitación Especializada"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Capacitación</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Capacitación Especializada</h3>
+                            <p class="text-gray-300 text-sm">
+                                Programas de formación en liderazgo, gestión de proyectos, innovación y habilidades
+                                digitales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio3.jpg" alt="Formación Empresarial"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Formación</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Formación Empresarial</h3>
+                            <p class="text-gray-300 text-sm">
+                                Talleres prácticos, programas in-company y certificaciones profesionales personalizadas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio4.jpg" alt="Desarrollo Organizacional"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Desarrollo</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Desarrollo Organizacional</h3>
+                            <p class="text-gray-300 text-sm">
+                                Gestión del cambio y fortalecimiento de la cultura organizacional para el crecimiento
+                                sostenible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio5.jpg" alt="Metodologías Innovadoras"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Innovación</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Metodologías Innovadoras</h3>
+                            <p class="text-gray-300 text-sm">
+                                Implementación de enfoques modernos y tecnologías avanzadas para la formación continua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-navy-light border-l-4 border-crimson rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105">
+                        <div class="aspect-square overflow-hidden">
+                            <img src="images/servicio6.jpg" alt="Transformación Digital"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gold font-semibold uppercase tracking-wide">Tecnología</span>
+                            <h3 class="font-display font-bold text-2xl mt-2 mb-3">Transformación Digital</h3>
+                            <p class="text-gray-300 text-sm">
+                                Acompañamiento en la digitalización y modernización de procesos empresariales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="servicios.html"
+                        class="inline-flex items-center text-gold hover:text-gold-light font-semibold transition-colors">
+                        Ver todos los servicios
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="images/equipo.jpg" alt="Equipo ASTRAEd"
+                            class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                    </div>
+
+                    <div class="order-1 lg:order-2">
+                        <p class="text-crimson text-sm font-semibold tracking-wide uppercase mb-3">
+                            Nuestra Historia
+                        </p>
+
+                        <h2 class="font-display font-bold text-4xl md:text-5xl text-navy mb-6">
+                            Equipo altamente calificado
+                        </h2>
+
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Desde nuestra fundación en 2016, ASTRAEd ha estado comprometida con la excelencia en la
+                            formación y consultoría. Colaboramos con instituciones públicas y privadas, construyendo
+                            relaciones duraderas basadas en la confianza y los resultados comprobados.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Con un equipo de profesionales altamente calificados, combinamos experiencia académica con
+                            conocimiento práctico del entorno empresarial. Nuestra filosofía se centra en transformar el
+                            conocimiento en acción, generando impacto real en personas y organizaciones.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Lo que nos diferencia es nuestro enfoque personalizado y nuestra capacidad para adaptarnos a
+                            las necesidades específicas de cada cliente, utilizando metodologías actualizadas y
+                            tecnologías innovadoras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-navy/85 z-10"></div>
+                <img src="images/cta.jpg" alt="Impulsa tu organización" class="w-full h-full object-cover">
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-20 relative text-center">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-8">
+                    ¿Listo para <span class="text-crimson">transformar</span> tu organización?
+                </h2>
+                <a href="contacto.html"
+                    class="inline-block px-10 py-4 bg-gradient-to-r from-crimson to-gold text-white font-semibold text-lg rounded-md hover:scale-105 transition-transform duration-300 shadow-xl">
+                    Solicita una Consulta Gratuita
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Gallery -->
+        <section class="py-20 bg-navy text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">
+                        Síguenos en redes
+                    </h2>
+                    <p class="text-gray-300 text-lg">
+                        @ASTRAEd
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social1.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social2.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social3.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social4.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social5.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-square overflow-hidden rounded-lg">
+                        <img src="images/social6.jpg" alt="ASTRAEd Social" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-crimson/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fab fa-instagram text-4xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

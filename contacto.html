@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | ASTRAEd</title>
+    <meta name="description"
+        content="Contáctanos para consultas, capacitaciones y servicios de consultoría estratégica. Estamos listos para impulsar el crecimiento de tu organización.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'crimson': '#A51C30',
+                        'crimson-dark': '#8B1728',
+                        'navy': '#0C2340',
+                        'navy-light': '#1A3A5C',
+                        'gold': '#C99700',
+                        'gold-light': '#E6B800'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        #mobile-menu.hidden {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        #mobile-menu:not(.hidden) {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white" data-page="contacto">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+
+        <section class="relative py-32 bg-navy text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-display font-bold text-5xl md:text-6xl mb-8">
+                    Contáctanos
+                </h1>
+                <div class="flex justify-center">
+                    <div class="h-1 w-32 bg-gradient-to-r from-crimson via-gold to-crimson rounded-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                    <!-- Contact Information -->
+                    <div>
+                        <div class="bg-navy text-white p-8 rounded-lg border-t-4 border-crimson shadow-xl">
+                            <h2 class="font-display font-bold text-3xl mb-6">
+                                Información de Contacto
+                            </h2>
+
+                            <div class="mb-6">
+                                <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                                    <i class="fas fa-clock mr-3 text-crimson"></i>
+                                    Horarios de Atención
+                                </h3>
+                                <div class="pl-9 space-y-2 text-gray-300">
+                                    <p>Lunes - Viernes: 8:00 AM - 6:00 PM</p>
+                                    <p>Sábado: 9:00 AM - 1:00 PM</p>
+                                    <p class="text-sm text-gray-400">Domingo: Cerrado</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-3 text-crimson"></i>
+                                    Ubicación
+                                </h3>
+                                <p class="pl-9 text-gray-300">
+                                    Asunción, Paraguay
+                                </p>
+                            </div>
+
+                            <div class="mb-6">
+                                <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                                    <i class="fas fa-phone mr-3 text-crimson"></i>
+                                    Teléfono
+                                </h3>
+                                <p class="pl-9 text-gray-300">
+                                    <a href="tel:+595XXXXXXXXX" class="hover:text-crimson transition-colors">
+                                        +595 XXX XXX XXX
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="mb-6">
+                                <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                                    <i class="fab fa-whatsapp mr-3 text-crimson"></i>
+                                    WhatsApp
+                                </h3>
+                                <p class="pl-9 text-gray-300">
+                                    <a href="https://wa.me/595XXXXXXXXX" class="hover:text-crimson transition-colors"
+                                        target="_blank">
+                                        +595 XXX XXX XXX
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="mb-6">
+                                <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                                    <i class="fas fa-envelope mr-3 text-crimson"></i>
+                                    Email
+                                </h3>
+                                <p class="pl-9 text-gray-300">
+                                    <a href="mailto:contacto@astraed.com" class="hover:text-crimson transition-colors">
+                                        contacto@astraed.com
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="mt-8 p-4 bg-navy-light rounded-lg border-l-4 border-gold">
+                                <p class="text-sm text-gray-300">
+                                    <i class="fas fa-info-circle text-gold mr-2"></i>
+                                    <strong>Capacitaciones Grupales:</strong> Ofrecemos programas especiales para grupos
+                                    corporativos y eventos empresariales.
+                                </p>
+                            </div>
+
+                            <div class="mt-8">
+                                <h3 class="font-semibold text-gold text-lg mb-4">
+                                    Síguenos en Redes Sociales
+                                </h3>
+                                <div class="flex space-x-4">
+                                    <a href="#"
+                                        class="w-12 h-12 bg-navy-light rounded-full flex items-center justify-center hover:bg-crimson transition-colors text-xl"
+                                        aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-12 h-12 bg-navy-light rounded-full flex items-center justify-center hover:bg-crimson transition-colors text-xl"
+                                        aria-label="Facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-12 h-12 bg-navy-light rounded-full flex items-center justify-center hover:bg-crimson transition-colors text-xl"
+                                        aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-12 h-12 bg-navy-light rounded-full flex items-center justify-center hover:bg-crimson transition-colors text-xl"
+                                        aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="bg-navy text-white p-8 rounded-lg border-t-4 border-t-gradient shadow-xl"
+                            style="border-image: linear-gradient(to right, #A51C30, #C99700) 1;">
+                            <h2 class="font-display font-bold text-3xl mb-6">
+                                Envíanos un Mensaje
+                            </h2>
+
+                            <form id="contact-form" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Nombre Completo <span class="text-crimson">*</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all"
+                                        placeholder="Juan Pérez">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Email <span class="text-crimson">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all"
+                                        placeholder="juan@empresa.com">
+                                </div>
+
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Teléfono
+                                    </label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all"
+                                        placeholder="+595 XXX XXX XXX">
+                                </div>
+
+                                <div>
+                                    <label for="organization" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Empresa / Organización
+                                    </label>
+                                    <input type="text" id="organization" name="organization"
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all"
+                                        placeholder="Nombre de la empresa">
+                                </div>
+
+                                <div>
+                                    <label for="service" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Servicio de Interés
+                                    </label>
+                                    <select id="service" name="service"
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all">
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="consultoria">Consultoría Estratégica</option>
+                                        <option value="capacitacion">Capacitación Especializada</option>
+                                        <option value="formacion">Formación Empresarial</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="training_type" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Tipo de Formación
+                                    </label>
+                                    <select id="training_type" name="training_type"
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="inhouse">In-Company (En empresa)</option>
+                                        <option value="open">Programa Abierto</option>
+                                        <option value="consulting">Consultoría</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">
+                                        Mensaje / Comentarios
+                                    </label>
+                                    <textarea id="message" name="message" rows="5"
+                                        class="w-full px-4 py-3 bg-navy-light border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-crimson focus:border-transparent transition-all resize-none"
+                                        placeholder="Cuéntanos más sobre tus necesidades..."></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full px-8 py-4 bg-gradient-to-r from-crimson to-gold text-white font-semibold text-lg rounded-md hover:scale-105 transition-transform duration-300 shadow-xl">
+                                    Enviar Mensaje
+                                    <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+
+                                <p class="text-xs text-gray-400 text-center mt-4">
+                                    <i class="fas fa-lock mr-1"></i>
+                                    Tus datos están protegidos y serán utilizados únicamente para contactarte.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-navy text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">
+                        Cómo Llegar
+                    </h2>
+                    <p class="text-gray-300 text-lg">
+                        Encuéntranos en Asunción, Paraguay
+                    </p>
+                </div>
+
+                <div class="relative h-96 bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115106.38153398227!2d-57.6561!3d-25.2637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da5d5f48f29f3%3A0x1e00b0c52619dd67!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1ses!2s!4v1234567890"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="grayscale"></iframe>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-navy-light p-6 rounded-lg border-l-4 border-crimson">
+                        <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                            <i class="fas fa-car mr-3"></i>
+                            Estacionamiento
+                        </h3>
+                        <p class="text-gray-300 text-sm">
+                            Contamos con estacionamiento disponible para nuestros visitantes.
+                        </p>
+                    </div>
+
+                    <div class="bg-navy-light p-6 rounded-lg border-l-4 border-gold">
+                        <h3 class="font-semibold text-gold text-lg mb-3 flex items-center">
+                            <i class="fas fa-bus mr-3"></i>
+                            Transporte Público
+                        </h3>
+                        <p class="text-gray-300 text-sm">
+                            Accesible mediante diversas líneas de transporte público en la zona.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Formulario enviado. En producción, aquí se enviaría el formulario a un servidor.');
+            // Add your form submission logic here
+        });
+    </script>
+</body>
+
+</html>
